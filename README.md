@@ -5,6 +5,8 @@ A workshop on occupancy models in R. This workshop uses the 'unmarked' package t
 This workshop covers:
 
 * single season occupancy models and goodness-of-fit tests
+* building and comparing multiple models
+* model-averaging predictions for occupancy models
 
 Contents:
 
