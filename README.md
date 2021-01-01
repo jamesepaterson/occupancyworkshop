@@ -1,6 +1,6 @@
 # Workshop: occupancy models in R
 
-A workshop on occupancy models in R. This workshop uses the 'unmarked' package to construct single season occupancy models in R. All examples use a simulated dataset.
+A workshop on occupancy models in R. This workshop uses the 'unmarked' package to construct occupancy models in R. All examples use included simulated datasets.
 
 This workshop covers:
 
