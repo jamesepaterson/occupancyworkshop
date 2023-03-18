@@ -101,7 +101,7 @@ occu_model_list <- list(occ_full = occu_p_full_psi_full,
 library(AICcmodavg)
 occu_modavg_psi_predict <- modavgPred(occu_model_list, 
                                         # c.hat = 1, # to change variance inflation factor, default = 1) 
-                                        parm.type = "psi", # psi = occupancy, can also be "det" for detection probability
+                                        parm.type = "psi", # psi = occupancy, can also be "detect" for detection probability
                                         newdata = sample.unmarkedFrame_cov@siteCovs)[c("mod.avg.pred",
                                                                                        "lower.CL",
                                                                                        "upper.CL")]
