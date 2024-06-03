@@ -8,7 +8,7 @@ This workshop covers:
 * building and comparing multiple models
 * model-averaging predictions for occupancy models
 * fitting dynamic (multi-season) occupancy models
-* fitting implicit dynamic occupancy models
+* fitting implicit dynamics occupancy models
 
 Contents:
 
@@ -16,7 +16,7 @@ Contents:
 * 02_singleseasonoccupancy.R contains code for introduction to occupancy models
 * 03_singleseasonoccupancy_part2_modelcomparison.R contains code for building and comparing single season occupancy models
 * 04_dynamicoccupancy.R contains code for building dynamic (multi-season) occupancy models
-* 05_implicitdynamicoccupancy.R contains code for building implicit dynamic occupancy models
+* 05_implicitdynamicsoccupancy.R contains code for building implicit dynamic occupancy models
 * detection_history.csv contains simulated detection history data
 * site_cov.csv contains simulated site covariates (forest cover and agriculture cover)
 * effort.csv contains simulated observation covariate for search effort per survey
