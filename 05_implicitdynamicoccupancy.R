@@ -1,8 +1,8 @@
 ## ---------------------------
 ##
-## Script name: 05_implicitdynamicoccupancy.R 
+## Script name: 05_implicitdynamicsoccupancy.R 
 ##
-## Purpose of script: Building implicit dynamic (multi-season) occupancy models in R
+## Purpose of script: Building implicit dynamics (multi-season) occupancy models in R
 ##
 ## Author: James E Paterson
 ##
@@ -55,7 +55,7 @@ frog_pao <- createPao( # data = a matrix with observed detection history
 # Summary of pao occupancy model data
 summary(frog_pao)
 
-# Setting-up wetland change through time as an occupancy covariate for implicit dynamic occupancy model
+# Setting-up wetland change through time as an occupancy covariate for implicit dynamics occupancy model
 # All site covariates used for Psi model must be included in this dataframe
 # From occMod() documentation for implicit dynamics ("occMod_DO4"):
 # psi.cov should be a data frame containing the unit-specific covariates to use for the occupancy
@@ -70,7 +70,7 @@ implicit_occ_psi_covs <- data.frame(wetland_t = c(site_cov$wetland, site_cov$wet
 ## ----buildoccMod-----------------------------------------------------------------------------------
 
 # Fit models with occMod()
-# type = "do.4" for implicit dynamic occupancy
+# type = "do.4" for implicit dynamics occupancy
 implicit_occ_m1 <- occMod(model = list(psi ~wetland_t + temp + prec,
                                        p ~ effort), 
                           cov.list = list(psi.cov = implicit_occ_psi_covs),
