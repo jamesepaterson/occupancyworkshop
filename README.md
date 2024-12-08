@@ -1,6 +1,6 @@
 # Workshop: occupancy models in R
 
-A workshop on occupancy models in R. This workshop uses the 'unmarked' and 'RPresence' packages to construct occupancy models in R. All examples use included simulated datasets.
+A workshop on occupancy models in R. This workshop uses the 'unmarked', 'RPresence', and 'jagsUI' packages to construct occupancy models in R. All examples use included simulated datasets.
 
 This workshop covers:
 
@@ -9,6 +9,7 @@ This workshop covers:
 * model-averaging predictions for occupancy models
 * fitting dynamic (multi-season) occupancy models
 * fitting implicit dynamics occupancy models
+* fitting multi-species occupancy models with JAGS
 
 Contents:
 
@@ -17,7 +18,9 @@ Contents:
 * 03_singleseasonoccupancy_part2_modelcomparison.R contains code for building and comparing single season occupancy models
 * 04_dynamicoccupancy.R contains code for building dynamic (multi-season) occupancy models
 * 05_implicitdynamicsoccupancy.R contains code for building implicit dynamic occupancy models
+* 06_multispeciesoccupancy.R contains code for building basic multi-species occupancy models with JAGS
 * detection_history.csv contains simulated detection history data
+* community_detection_history.RData contains simulated community detection data for 18 species
 * site_cov.csv contains simulated site covariates (forest cover and agriculture cover)
 * effort.csv contains simulated observation covariate for search effort per survey
 * observers.csv contains simulated observation covariate for number of observers per survey
