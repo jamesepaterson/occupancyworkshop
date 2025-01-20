@@ -22,7 +22,7 @@ Contents:
 * 07_multispeciesoccupancycovariates.R contains code for multi-species occupancy models with covariates and estimating species richness
 * detection_history.csv contains simulated detection history data
 * community_detection_history.RData contains simulated community detection data for 18 species
-* * community_detection_history_covariates.RData contains simulated community detection data for 18 species for covariate tutorial
+* community_detection_history_covariates.RData contains simulated community detection data for 18 species for covariate tutorial
 * site_cov.csv contains simulated site covariates (forest cover and agriculture cover)
 * effort.csv contains simulated observation covariate for search effort per survey
 * observers.csv contains simulated observation covariate for number of observers per survey
