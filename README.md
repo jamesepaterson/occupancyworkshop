@@ -19,8 +19,10 @@ Contents:
 * 04_dynamicoccupancy.R contains code for building dynamic (multi-season) occupancy models
 * 05_implicitdynamicsoccupancy.R contains code for building implicit dynamic occupancy models
 * 06_multispeciesoccupancy.R contains code for building basic multi-species occupancy models with JAGS
+* 07_multispeciesoccupancycovariates.R contains code for multi-species occupancy models with covariates and estimating species richness
 * detection_history.csv contains simulated detection history data
 * community_detection_history.RData contains simulated community detection data for 18 species
+* * community_detection_history_covariates.RData contains simulated community detection data for 18 species for covariate tutorial
 * site_cov.csv contains simulated site covariates (forest cover and agriculture cover)
 * effort.csv contains simulated observation covariate for search effort per survey
 * observers.csv contains simulated observation covariate for number of observers per survey
