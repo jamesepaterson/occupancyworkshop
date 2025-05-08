@@ -10,6 +10,9 @@ This workshop covers:
 * fitting dynamic (multi-season) occupancy models
 * fitting implicit dynamics occupancy models
 * fitting multi-species occupancy models with JAGS
+* fitting multi-species occupancy models with covariates and estimating species richness
+* fitting multi-species occupancy models estimating the number of undetected species
+
 
 Contents:
 
