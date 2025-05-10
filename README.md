@@ -13,7 +13,6 @@ This workshop covers:
 * fitting multi-species occupancy models with covariates and estimating species richness
 * fitting multi-species occupancy models estimating the number of undetected species
 
-
 Contents:
 
 * 01_installingoccupancypackages.R checks if required packages are installled. Installs them if they are not.
@@ -23,9 +22,11 @@ Contents:
 * 05_implicitdynamicsoccupancy.R contains code for building implicit dynamic occupancy models
 * 06_multispeciesoccupancy.R contains code for building basic multi-species occupancy models with JAGS
 * 07_multispeciesoccupancycovariates.R contains code for multi-species occupancy models with covariates and estimating species richness
+* 08_msomundetectedspecies contains code for multi-species occupancy models estimating the number of undetected species
 * detection_history.csv contains simulated detection history data
 * community_detection_history.RData contains simulated community detection data for 18 species
 * community_detection_history_covariates.RData contains simulated community detection data for 18 species for covariate tutorial
+* community_detection_3visits.csv contains simulated detection history of 18 species for 3 visits for tutorial estimating undetected species
 * site_cov.csv contains simulated site covariates (forest cover and agriculture cover)
 * effort.csv contains simulated observation covariate for search effort per survey
 * observers.csv contains simulated observation covariate for number of observers per survey
