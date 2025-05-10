@@ -10,6 +10,7 @@
 ##
 
 ## ----loaddata-----------------------------------------------------
+
 # Load libraries
 library(dplyr) # for data organization
 library(ggplot2) # for plotting
@@ -29,6 +30,7 @@ site.cov <- read.csv(file = "site_cov.csv") %>%
 
 
 ## ----msomCAugmented-----------------------------------------------
+
 library(jagsUI)
 
 naug <- 50 - ncol(y) # 18 observed species, we'll augment the data with an additional 32 species for a total of 50
@@ -117,26 +119,22 @@ model{
 }
 ", con = msom_augmented)
 
-# Parameters monitored
+# Parameters monitored (greatly reducing to focus on omega, N, z, w)
 wanted <- c("omega", "N", 
-            "b0.mean", "mu.b0", "sd.b0", 
-            "mu.forest", "sd.forest",
-            "mu.agri", "sd.agri",
-            "p.mean", "sd.lp", 
-            "psi", "p", "b0", "bforest",
             "z", "w")
 
 # Run model
 msom_augmented_out <- jags(msom_augmented_jags_data, 
                            NULL, wanted, msom_augmented,
-                           n.chains = 3, n.iter = 20000, 
-                           n.burnin = 1000, n.thin = 5, 
+                           n.chains = 3, n.iter = 25000, 
+                           n.burnin = 5000, n.thin = 5, 
                            parallel = TRUE, DIC = FALSE)
 
 # Summary
 modelSummary <- summary(msom_augmented_out)
 
 ## ----omegaNresults----------------------------------------------------------------------------------
+
 # Posterior distribution of Omega
 modelSummary["omega",]
 
@@ -158,6 +156,7 @@ ggplot(data = data.frame(N = msom_augmented_out$sims.list$N), aes(x = N)) +
 
 
 ## ----speciesRichnessEstimates-----------------------------------------------------------------------
+
 # Species occupancy state at each site
 z_results <- msom_augmented_out$sims.list$z
 
